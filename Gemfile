@@ -18,17 +18,12 @@ end
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 gem 'angularjs-rails'
+gem 'less-rails'
+gem 'coffee-rails', '~> 4.0.0'
+gem 'twitter-bootstrap-rails'
+gem 'therubyracer', :platforms => :ruby
+gem 'uglifier', '>= 1.3.0'
 
-group :assets do
-  gem 'sass-rails', '~> 4.0.0'
-  gem 'coffee-rails', '~> 4.0.0'
-  gem 'dynamic_form'
-  gem 'less-rails'
-  # See https://github.com/sstephenson/execjs#readme for more supported runtimes
-  gem 'therubyracer', :platforms => :ruby
-
-  gem 'uglifier', '>= 1.3.0'
-end
 
 group :test, :development do
   gem 'rspec-rails', '~> 2.5'
@@ -41,6 +36,8 @@ group :test do
   gem 'database_cleaner'
   gem 'factory_girl'
   gem 'email_spec'
+  gem 'multi_test'
+  gem 'simplecov'
 end
 
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
