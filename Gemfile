@@ -27,6 +27,7 @@ gem 'uglifier', '>= 1.3.0'
 
 group :test, :development do
   gem 'rspec-rails', '~> 2.5'
+  gem 'jasmine'
 end
 
 group :test do
