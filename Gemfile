@@ -23,12 +23,15 @@ gem 'coffee-rails', '~> 4.0.0'
 gem 'twitter-bootstrap-rails'
 gem 'therubyracer', :platforms => :ruby
 gem 'uglifier', '>= 1.3.0'
+gem 'teaspoon'
+gem 'phantomjs'
+gem 'jasmine-rails'
 
 
 group :test, :development do
   gem 'rspec-rails', '~> 2.5'
-  gem 'jasmine'
 end
+
 
 group :test do
   gem 'cucumber-rails', :require => false
