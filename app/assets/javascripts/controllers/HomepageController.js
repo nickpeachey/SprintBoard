@@ -8,5 +8,12 @@
 var app = angular.module('sprintBoard',[]);
 
 app.controller('HomeController', ['$scope', function($scope) {
-    $scope.name = 'Hola!';
+
+    $scope.localMessage = '';
+
+    $scope.setLocalMessage = function(message) {
+        $scope.localMessage = message;
+    }
+
+
 }]);
